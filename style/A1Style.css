@@ -1,0 +1,68 @@
+/*  Name: Patricia Gariando
+    Student #: 991 446 494
+    Website: Filipino Snack Store */
+
+/* main body */
+main {
+          background-color: #FFF8E8;
+          padding: 25px;
+          height: auto;
+          text-align: justify;
+          line-height: 1.5;
+          color: black;
+}
+
+main::after {
+          /* you're supposed to clear floats after */
+          content: "";
+          display: block;
+          clear: both;
+}
+
+/* two floating columns */
+.column {
+          float: left;
+          height: 90vh;
+          width: 50%;
+          margin: auto;
+          padding: 10px;
+          text-align: center;
+}
+
+.column img {
+          height: auto;
+          width: 100%;
+          object-fit: contain;
+          opacity: 0.5;
+          box-shadow: 10px 10px lightblue;
+}
+
+/* clear */
+.row:after {
+          content: "";
+          display: table;
+          clear: both;
+}
+
+.row p {
+          text-align: justify;
+}
+
+/* table to showcase Staff Memebers */
+table {
+          width: 100%;
+}
+
+table,
+th,
+td {
+          text-align: center;
+          padding: 10px 10px;
+}
+
+table img {
+          height: 100px;
+          width: auto;
+          border: 5px dotted #A799B7;
+          border-radius: 25px 10px;
+}

@@ -1,0 +1,112 @@
+/*  Name: Patricia Gariando  
+    Student #: 991 446 494 
+    Website: Filipino Snack Store */
+
+main {
+    background-color: #FFF8E8;
+    padding: 25px;
+    color: black;
+}
+
+/* create two unequal columns that float next to each other */
+.column {
+    float: left;
+    padding: 0px 10px 0px 10px;
+    height: auto;
+}
+
+.left {
+    width: 60%;
+}
+
+.right {
+    width: 40%;
+}
+
+/* Clear Floats */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* form elements */
+fieldset {
+    border: 5px dotted #A799B7;
+}
+
+legend {
+    padding: 0px 5px;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel] {
+    font-size: 15px;
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px 10px;
+}
+
+input[type=text]:focus {
+    box-shadow: 0px 0px 15px #d6bbf3;
+}
+
+/* table to organize the info */
+table {
+    width: 100%;
+    text-align: left;
+}
+
+tr,
+td {
+    padding: 10px 10px;
+    width: 50%;
+}
+
+#couponSelect {
+    font-size: 15px;
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px 10px;
+}
+
+/* display the products: same grid table as A2 (modified) */
+#products {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    text-align: center;
+    height: auto;
+}
+
+#products img {
+    padding: 10px;
+    width: 75px;
+    height: auto;
+    background-color: white;
+    box-shadow: 0px 0px 5px #e9dcf7;
+}
+
+#products p {
+    font-size: 10px;
+}
+
+#firstLabel {
+    height: 15vh;
+}
+
+#secondLabel,
+#thirdLabel {
+    height: 20vh;
+}
+
+input[type=button],
+input[type=submit],
+input[type=reset] {
+    font-size: 15px;
+    width: auto;
+    margin: 10px 3px;
+    padding: 10px 10px;
+}

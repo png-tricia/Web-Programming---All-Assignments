@@ -1,0 +1,148 @@
+/*  Name: Patricia Gariando  
+    Student #: 991 446 494 
+    Website: Hidden Alley Shop */
+
+main {
+    background-color: white;
+    padding: 25px;
+    color: black;
+}
+
+/* header & footer specific to only A4 */
+header,
+footer {
+    background-image: url("../A4Images/img_splatter.png");
+    height: auto;
+    padding: 0px 25px;
+}
+
+header {
+    border-bottom: 5px dashed white;
+}
+
+footer {
+    border-top: 5px dashed white;
+}
+
+/* create two unequal columns that float next to each other */
+.column {
+    float: left;
+    padding: 0px 10px 0px 10px;
+    height: auto;
+}
+
+.left {
+    width: 45%;
+}
+
+.right {
+    width: 55%;
+}
+
+/* clear floats */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* form elements */
+fieldset {
+    border: 5px double black;
+}
+
+legend {
+    padding: 0px 5px;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel] {
+    font-size: 15px;
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px 10px;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus {
+    box-shadow: 0px 0px 15px #d6bbf3;
+}
+
+/* table to organize the info */
+table {
+    width: 100%;
+    text-align: left;
+}
+
+tr,
+td {
+    padding: 6px 10px;
+    width: 50%;
+}
+
+/* dropdown */
+#couponSelect {
+    font-size: 15px;
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px 10px;
+}
+
+/* three buttons at the bottom */
+input[type=button],
+input[type=submit],
+input[type=reset] {
+    font-size: 15px;
+    width: auto;
+    margin: 10px 3px;
+    padding: 10px 10px;
+}
+
+/* shopping cart! */
+.cart {
+    float: left;
+    width: 100%;
+    border: 1px solid #A6B697;
+    color: black;
+    height: auto;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.cart img {
+    float: left;
+    height: auto;
+    width: 100px;
+    margin: 20px;
+}
+
+.priceTag {
+    float: right;
+    padding-right: 10px;
+}
+
+.itemDesc {
+    font-size: 15px;
+    padding-right: 5px;
+}
+
+.itemTotal {
+    float: right;
+    margin: 5px;
+    padding-right: 5px;
+}
+
+/* style the disabled buttons */
+button.disabled {
+    background-color: black;
+    color: white;
+}
+
+textarea {
+    width: 50%;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}

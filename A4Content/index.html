@@ -1,0 +1,220 @@
+<!--Name: Patricia Gariando
+    Student #: 991 446 494
+    Website: Hidden Alley Shop-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Home: Assignment 4
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link the style sheet-->
+    <link rel="stylesheet" href="../style/website.css">
+    <link href="A4Style/A4Style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <!-- new logo for the hidden shop -->
+        <img src="A4Images/img-logo2.png">
+        <div class="center">
+            <h1 style="text-align: center;">HIDDEN ALLEY</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../A2Content/index.html">Assignment 2</a></li>
+                    <li><a href="../A3Content/index.html">Assignment 3</a></li>
+                    <li><a class="active" href="index.html">Assignment 4</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- A4 layout will be similar to that of A3, but we will show a different product -->
+    <main>
+        <div class="center">
+            <div class="row">
+                <!-- we are going to show the products; row by row -->
+                <div class="column left">
+                    <fieldset style="border-color: white;">
+                        <legend>
+                            <h3>Products:</h3>
+                        </legend>
+                        <!-- I am going to reuse this idea from last semester heheh -->
+                        <div class="cart"> <!-- one item in the shopping cart -->
+                            <img src="A4Images/img_Chucky.png" alt="" />
+                            <span>
+                                <h3>Chucky<span class="priceTag">$437.99</span>
+                                </h3>
+                                <p class="itemDesc" id="info1">A doll that contains the soul
+                                    of a vicious serial killer. Continously hunting for it's next victim.</p>
+                                <h3 class="itemTotal" id="prod1Total">$0.00</h3>
+                                <button type="button" id="subP1Btn">-</button>
+                                <button type="button" disabled class="disabled" id="quantityP1Btn">0</button>
+                                <button type="button" id="addP1Btn">+</button>
+                            </span>
+                        </div>
+                        <div class="cart"> <!-- one item in the shopping cart -->
+                            <img src="A4Images/img_Annabelle.png" alt="" />
+                            <span>
+                                <h3>Annabelle<span class="priceTag">$1283.99</span>
+                                </h3>
+                                <p class="itemDesc" id="info2">A vintage doll in a beautiful
+                                    white dress. An object of
+                                    beauty, now a conduit for ultimate evil.</p>
+                                <h3 class="itemTotal" id="prod2Total">$0.00</h3>
+                                <button type="button" id="subP2Btn">-</button>
+                                <button type="button" disabled class="disabled" id="quantityP2Btn">0</button>
+                                <button type="button" id="addP2Btn">+</button>
+                            </span>
+                        </div>
+                        <div class="cart"> <!-- one item in the shopping cart -->
+                            <img src="A4Images/img_Freddy.png" alt="" />
+                            <span>
+                                <h3>Freddy Fazbear<span class="priceTag">$321.87</span>
+                                </h3>
+                                <p class="itemDesc" id="info3">An animatronic bear who's out
+                                    for children's blood and some
+                                    good ol' Hawaiian pizza.</p>
+                                <h3 class="itemTotal" id="prod3Total">$0.00</h3>
+                                <button type="button" id="subP3Btn">-</button>
+                                <button type="button" disabled class="disabled" id="quantityP3Btn">0</button>
+                                <button type="button" id="addP3Btn">+</button>
+                            </span>
+                        </div>
+                        <div class="cart"> <!-- one item in the shopping cart -->
+                            <img src="A4Images/img_Jigsaw.png" alt="" />
+                            <span>
+                                <h3>Jigsaw<span class="priceTag">$837.22</span>
+                                </h3>
+                                <p class="itemDesc" id="info4">A star studded puppet used
+                                    for ventriloquism. Coveniently
+                                    light-weight and cursed.</p>
+                                <h3 class="itemTotal" id="prod4Total">$0.00</h3>
+                                <button type="button" id="subP4Btn">-</button>
+                                <button type="button" disabled class="disabled" id="quantityP4Btn">0</button>
+                                <button type="button" id="addP4Btn">+</button>
+                            </span>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="column right">
+                    <form name="custDetails">
+                        <fieldset>
+                            <legend>
+                                <h3>Customer Information:</h3>
+                            </legend>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <label for="custEmail">Email Address:</label><br>
+                                        <input type="email" id="custEmail" name="custEmail"
+                                            placeholder="example@somewhere.ca">
+                                    </td>
+                                    <td>
+                                        <label for="custPhone">Phone Number:</label><br>
+                                        <input type="tel" id="custPhone" name="custPhone" placeholder="123 456 7890"
+                                            pattern="[0-9]{3} [0-9]{3} [0-9]{4}" title="ten digit phone number">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="custFName">First Name:</label><br>
+                                        <input type="text" id="custFName" name="custFName" placeholder="Patricia"><br>
+                                    </td>
+                                    <td>
+                                        <label for="custLName">Last Name:</label><br>
+                                        <input type="text" id="custLName" name="custLName" placeholder="Gariando"><br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <label for="custAddress">Address:</label><br>
+                                        <input type="text" id="custAddress" name="custAddress"
+                                            placeholder="1 Main Street"><br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="custCity">City:</label><br>
+                                        <input type="text" id="custCity" name="custCity" placeholder="Brampton">
+                                    </td>
+                                    <td>
+                                        <label for="custPostal">Postal Code:</label><br>
+                                        <input type="text" id="custPostal" name="custPostal" placeholder="A1B 2C3"
+                                            pattern="[A-Z][0-9][A-Z] [0-9][A-Z][0-9]">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Shipping Method:</td>
+                                    <td>Payment Method:</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" id="mailStandard" name="mailType"
+                                            value="Standard (5-7 Business Days)" checked>
+                                        <label for="mailStandard">Standard (5-7 Business Days)</label><br>
+                                    </td>
+                                    <td>
+                                        <input type="radio" id="payDebit" name="payType" value="Debit">
+                                        <label for="payDebit">Debit</label><br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" id="mailPriority" name="mailType"
+                                            value="Priority (1-3 Business Days)">
+                                        <label for="mailPriority">Priority (1-3 Business Days)</label><br>
+                                    </td>
+                                    <td>
+                                        <input type="radio" id="payCredit" name="payType" value="Credit" checked>
+                                        <label for="payCredit">Visa</label><br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" id="mailExpress" name="mailType"
+                                            value="Express (1 Business Day)">
+                                        <label for="mailExpress">Express (1 Business Day)</label><br>
+                                    </td>
+                                    <td>
+                                        <input type="radio" id="payPal" name="payType" value="PayPal">
+                                        <label for="payPal">PayPal</label><br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <select id="couponSelect" onclick="getDiscount()">
+                                            <option>Select a FREEBIE:</option>
+                                            <option>free random poster!</option>
+                                            <option>free colouring book!</option>
+                                            <option>free random mini figure!</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                        <input type="button" value="ADD" name="addBtn">
+                        <input type="reset" value="CLEAR" name="resetBtn">
+                        <input type="button" value="DISPLAY" name="displayBtn">
+                        <input type="button" value="SEND" name="sendBtn">
+                    </form>
+                </div>
+            </div>
+            <hr><br>
+            <textarea id="txtDisplay" rows="15" readonly></textarea><br>
+        </div>
+    </main>
+    <footer>
+        <div class="center">
+            <p>Patricia Gariando</p>
+            <p>991 446 494</p>
+            <p style="text-align: center;">Copyright © Hidden Alley | Terms of Service | Help</p>
+        </div>
+    </footer>
+    <script src="A4Script/A4Script.js"></script>
+</body>
+
+</html>
