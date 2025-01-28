@@ -1,7 +1,6 @@
 ## SYST10199 Web Programming - All Assignments (4)
 Program: **Computer Programming @ Sheridan College** <br>
 Note: The following assignments were completed during Semester 2 (2024) <br>
-Language(s): HTML, CSS, JavaScript
 
 ## The Details: 
 The contents of the public_html folder compiled all assignments. 
